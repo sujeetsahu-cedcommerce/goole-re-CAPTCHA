@@ -3,7 +3,10 @@ import "./App.css";
 import ReCAPTCHA from "react-google-recaptcha";
 
 // const SITE_KEY = "6LeRlHImAAAAAK2dOMAtwHbcSHb8CpxgzRLBBs4O";
-const SECRET_KEY = "6LeRlHImAAAAAGHd8gFCTZRhJnDO2jdRGAGrC6qs";
+// const SECRET_KEY = "6LeRlHImAAAAAGHd8gFCTZRhJnDO2jdRGAGrC6qs";
+
+const testingSitekey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
+const testingSecretkey: "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
 
 function App() {
   // console.log("process.env.REACT_APP_SITE_KEY", process.env.REACT_APP_SITE_KEY);
@@ -54,7 +57,7 @@ function App() {
         <input type="text" id="name" className="input" />
         {/* <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} /> */}
         <ReCAPTCHA
-          sitekey="6LeRlHImAAAAAK2dOMAtwHbcSHb8CpxgzRLBBs4O"
+          sitekey={testingSitekey}
           onChange={onChange}
           onExpired={expired}
         />
